@@ -27,8 +27,10 @@
 
 (def cljs-jar-url "https://github.com/clojure/clojurescript/releases/download/r1.7.145/cljs.jar")
 
-(defn -main [& args]
+(defn download []
   (go (let [resp (<! (read-from-uri cljs-jar-url))]
       (save-to-file "test.jar" resp))))
 
-(set! *main-cli-fn* -main)
+(defn noop [] nil)
+
+(set! *main-cli-fn* noop)

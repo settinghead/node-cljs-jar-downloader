@@ -3,4 +3,5 @@
 (cljs.build.api/watch "src"
   {:main 'cljs-jar-downloader.core
    :target :nodejs
-   :output-to "out/main.js"})
+   :pretty-print true
+   :output-to "out/cljs_jar_downloader.js"})
