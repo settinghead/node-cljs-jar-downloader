@@ -11,5 +11,4 @@ pom.xml.asc
 .hgignore
 .hg/
 node_modules
-/out
 .DS_Store
