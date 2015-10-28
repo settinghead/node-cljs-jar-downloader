@@ -4,4 +4,4 @@
   {:main 'cljs-jar-downloader.core
    :target :nodejs
    :pretty-print true
-   :output-to "out/cljs_jar_downloader.js"})
+   :output-to "out/main.js"})

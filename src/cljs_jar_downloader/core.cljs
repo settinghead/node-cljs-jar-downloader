@@ -32,5 +32,4 @@
       (save-to-file "test.jar" resp))))
 
 (defn noop [] nil)
-
 (set! *main-cli-fn* noop)

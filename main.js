@@ -1,3 +1,3 @@
-var core = require('./out/cljs_jar_downloader.js');
+var core = require('./out/main.js');
 
-exports = cljs_jar_downloader.core;
+module.exports.download = cljs_jar_downloader.core.download;

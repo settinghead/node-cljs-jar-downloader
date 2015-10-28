@@ -10,103 +10,103 @@ var get = cljs.nodejs.require.call(null,"follow-redirects").https.get;
 var resp_chan = cljs.core.async.chan.call(null,(1));
 var res_fn = ((function (get,resp_chan){
 return (function (response){
-var c__1306__auto__ = cljs.core.async.chan.call(null,(1));
-cljs.core.async.impl.dispatch.run.call(null,((function (c__1306__auto__,get,resp_chan){
+var c__2264__auto__ = cljs.core.async.chan.call(null,(1));
+cljs.core.async.impl.dispatch.run.call(null,((function (c__2264__auto__,get,resp_chan){
 return (function (){
-var f__1307__auto__ = (function (){var switch__1241__auto__ = ((function (c__1306__auto__,get,resp_chan){
-return (function (state_6558){
-var state_val_6559 = (state_6558[(1)]);
-if((state_val_6559 === (1))){
-var state_6558__$1 = state_6558;
-return cljs.core.async.impl.ioc_helpers.put_BANG_.call(null,state_6558__$1,(2),resp_chan,response);
+var f__2265__auto__ = (function (){var switch__2243__auto__ = ((function (c__2264__auto__,get,resp_chan){
+return (function (state_2403){
+var state_val_2404 = (state_2403[(1)]);
+if((state_val_2404 === (1))){
+var state_2403__$1 = state_2403;
+return cljs.core.async.impl.ioc_helpers.put_BANG_.call(null,state_2403__$1,(2),resp_chan,response);
 } else {
-if((state_val_6559 === (2))){
-var inst_6556 = (state_6558[(2)]);
-var state_6558__$1 = state_6558;
-return cljs.core.async.impl.ioc_helpers.return_chan.call(null,state_6558__$1,inst_6556);
+if((state_val_2404 === (2))){
+var inst_2401 = (state_2403[(2)]);
+var state_2403__$1 = state_2403;
+return cljs.core.async.impl.ioc_helpers.return_chan.call(null,state_2403__$1,inst_2401);
 } else {
 return null;
 }
 }
-});})(c__1306__auto__,get,resp_chan))
+});})(c__2264__auto__,get,resp_chan))
 ;
-return ((function (switch__1241__auto__,c__1306__auto__,get,resp_chan){
+return ((function (switch__2243__auto__,c__2264__auto__,get,resp_chan){
 return (function() {
-var cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__ = null;
-var cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____0 = (function (){
-var statearr_6563 = [null,null,null,null,null,null,null];
-(statearr_6563[(0)] = cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__);
+var cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__ = null;
+var cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____0 = (function (){
+var statearr_2408 = [null,null,null,null,null,null,null];
+(statearr_2408[(0)] = cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__);
 
-(statearr_6563[(1)] = (1));
+(statearr_2408[(1)] = (1));
 
-return statearr_6563;
+return statearr_2408;
 });
-var cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____1 = (function (state_6558){
+var cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____1 = (function (state_2403){
 while(true){
-var ret_value__1243__auto__ = (function (){try{while(true){
-var result__1244__auto__ = switch__1241__auto__.call(null,state_6558);
-if(cljs.core.keyword_identical_QMARK_.call(null,result__1244__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
+var ret_value__2245__auto__ = (function (){try{while(true){
+var result__2246__auto__ = switch__2243__auto__.call(null,state_2403);
+if(cljs.core.keyword_identical_QMARK_.call(null,result__2246__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
 continue;
 } else {
-return result__1244__auto__;
+return result__2246__auto__;
 }
 break;
 }
-}catch (e6564){if((e6564 instanceof Object)){
-var ex__1245__auto__ = e6564;
-var statearr_6565_6567 = state_6558;
-(statearr_6565_6567[(5)] = ex__1245__auto__);
+}catch (e2409){if((e2409 instanceof Object)){
+var ex__2247__auto__ = e2409;
+var statearr_2410_2412 = state_2403;
+(statearr_2410_2412[(5)] = ex__2247__auto__);
 
 
-cljs.core.async.impl.ioc_helpers.process_exception.call(null,state_6558);
+cljs.core.async.impl.ioc_helpers.process_exception.call(null,state_2403);
 
 return new cljs.core.Keyword(null,"recur","recur",-437573268);
 } else {
-throw e6564;
+throw e2409;
 
 }
 }})();
-if(cljs.core.keyword_identical_QMARK_.call(null,ret_value__1243__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
-var G__6568 = state_6558;
-state_6558 = G__6568;
+if(cljs.core.keyword_identical_QMARK_.call(null,ret_value__2245__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
+var G__2413 = state_2403;
+state_2403 = G__2413;
 continue;
 } else {
-return ret_value__1243__auto__;
+return ret_value__2245__auto__;
 }
 break;
 }
 });
-cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__ = function(state_6558){
+cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__ = function(state_2403){
 switch(arguments.length){
 case 0:
-return cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____0.call(this);
+return cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____0.call(this);
 case 1:
-return cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____1.call(this,state_6558);
+return cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____1.call(this,state_2403);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__.cljs$core$IFn$_invoke$arity$0 = cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____0;
-cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__.cljs$core$IFn$_invoke$arity$1 = cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto____1;
-return cljs_jar_downloader$core$read_from_uri_$_state_machine__1242__auto__;
+cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__.cljs$core$IFn$_invoke$arity$0 = cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____0;
+cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__.cljs$core$IFn$_invoke$arity$1 = cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto____1;
+return cljs_jar_downloader$core$read_from_uri_$_state_machine__2244__auto__;
 })()
-;})(switch__1241__auto__,c__1306__auto__,get,resp_chan))
+;})(switch__2243__auto__,c__2264__auto__,get,resp_chan))
 })();
-var state__1308__auto__ = (function (){var statearr_6566 = f__1307__auto__.call(null);
-(statearr_6566[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__1306__auto__);
+var state__2266__auto__ = (function (){var statearr_2411 = f__2265__auto__.call(null);
+(statearr_2411[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__2264__auto__);
 
-return statearr_6566;
+return statearr_2411;
 })();
-return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null,state__1308__auto__);
-});})(c__1306__auto__,get,resp_chan))
+return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null,state__2266__auto__);
+});})(c__2264__auto__,get,resp_chan))
 );
 
-return c__1306__auto__;
+return c__2264__auto__;
 });})(get,resp_chan))
 ;
 var req = get.call(null,uri,res_fn);
 req.on("error",((function (get,resp_chan,res_fn,req){
-return (function (p1__6542_SHARP_){
-return cljs.core.println.call(null,"error",p1__6542_SHARP_);
+return (function (p1__2387_SHARP_){
+return cljs.core.println.call(null,"error",p1__2387_SHARP_);
 });})(get,resp_chan,res_fn,req))
 );
 
@@ -130,99 +130,99 @@ return response.pipe(file);
 });
 cljs_jar_downloader.core.cljs_jar_url = "https://github.com/clojure/clojurescript/releases/download/r1.7.145/cljs.jar";
 cljs_jar_downloader.core.download = (function cljs_jar_downloader$core$download(){
-var c__1306__auto__ = cljs.core.async.chan.call(null,(1));
-cljs.core.async.impl.dispatch.run.call(null,((function (c__1306__auto__){
+var c__2264__auto__ = cljs.core.async.chan.call(null,(1));
+cljs.core.async.impl.dispatch.run.call(null,((function (c__2264__auto__){
 return (function (){
-var f__1307__auto__ = (function (){var switch__1241__auto__ = ((function (c__1306__auto__){
-return (function (state_6588){
-var state_val_6589 = (state_6588[(1)]);
-if((state_val_6589 === (1))){
-var inst_6583 = cljs_jar_downloader.core.read_from_uri.call(null,cljs_jar_downloader.core.cljs_jar_url);
-var state_6588__$1 = state_6588;
-return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null,state_6588__$1,(2),inst_6583);
+var f__2265__auto__ = (function (){var switch__2243__auto__ = ((function (c__2264__auto__){
+return (function (state_2433){
+var state_val_2434 = (state_2433[(1)]);
+if((state_val_2434 === (1))){
+var inst_2428 = cljs_jar_downloader.core.read_from_uri.call(null,cljs_jar_downloader.core.cljs_jar_url);
+var state_2433__$1 = state_2433;
+return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null,state_2433__$1,(2),inst_2428);
 } else {
-if((state_val_6589 === (2))){
-var inst_6585 = (state_6588[(2)]);
-var inst_6586 = cljs_jar_downloader.core.save_to_file.call(null,"test.jar",inst_6585);
-var state_6588__$1 = state_6588;
-return cljs.core.async.impl.ioc_helpers.return_chan.call(null,state_6588__$1,inst_6586);
+if((state_val_2434 === (2))){
+var inst_2430 = (state_2433[(2)]);
+var inst_2431 = cljs_jar_downloader.core.save_to_file.call(null,"test.jar",inst_2430);
+var state_2433__$1 = state_2433;
+return cljs.core.async.impl.ioc_helpers.return_chan.call(null,state_2433__$1,inst_2431);
 } else {
 return null;
 }
 }
-});})(c__1306__auto__))
+});})(c__2264__auto__))
 ;
-return ((function (switch__1241__auto__,c__1306__auto__){
+return ((function (switch__2243__auto__,c__2264__auto__){
 return (function() {
-var cljs_jar_downloader$core$download_$_state_machine__1242__auto__ = null;
-var cljs_jar_downloader$core$download_$_state_machine__1242__auto____0 = (function (){
-var statearr_6593 = [null,null,null,null,null,null,null];
-(statearr_6593[(0)] = cljs_jar_downloader$core$download_$_state_machine__1242__auto__);
+var cljs_jar_downloader$core$download_$_state_machine__2244__auto__ = null;
+var cljs_jar_downloader$core$download_$_state_machine__2244__auto____0 = (function (){
+var statearr_2438 = [null,null,null,null,null,null,null];
+(statearr_2438[(0)] = cljs_jar_downloader$core$download_$_state_machine__2244__auto__);
 
-(statearr_6593[(1)] = (1));
+(statearr_2438[(1)] = (1));
 
-return statearr_6593;
+return statearr_2438;
 });
-var cljs_jar_downloader$core$download_$_state_machine__1242__auto____1 = (function (state_6588){
+var cljs_jar_downloader$core$download_$_state_machine__2244__auto____1 = (function (state_2433){
 while(true){
-var ret_value__1243__auto__ = (function (){try{while(true){
-var result__1244__auto__ = switch__1241__auto__.call(null,state_6588);
-if(cljs.core.keyword_identical_QMARK_.call(null,result__1244__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
+var ret_value__2245__auto__ = (function (){try{while(true){
+var result__2246__auto__ = switch__2243__auto__.call(null,state_2433);
+if(cljs.core.keyword_identical_QMARK_.call(null,result__2246__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
 continue;
 } else {
-return result__1244__auto__;
+return result__2246__auto__;
 }
 break;
 }
-}catch (e6594){if((e6594 instanceof Object)){
-var ex__1245__auto__ = e6594;
-var statearr_6595_6597 = state_6588;
-(statearr_6595_6597[(5)] = ex__1245__auto__);
+}catch (e2439){if((e2439 instanceof Object)){
+var ex__2247__auto__ = e2439;
+var statearr_2440_2442 = state_2433;
+(statearr_2440_2442[(5)] = ex__2247__auto__);
 
 
-cljs.core.async.impl.ioc_helpers.process_exception.call(null,state_6588);
+cljs.core.async.impl.ioc_helpers.process_exception.call(null,state_2433);
 
 return new cljs.core.Keyword(null,"recur","recur",-437573268);
 } else {
-throw e6594;
+throw e2439;
 
 }
 }})();
-if(cljs.core.keyword_identical_QMARK_.call(null,ret_value__1243__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
-var G__6598 = state_6588;
-state_6588 = G__6598;
+if(cljs.core.keyword_identical_QMARK_.call(null,ret_value__2245__auto__,new cljs.core.Keyword(null,"recur","recur",-437573268))){
+var G__2443 = state_2433;
+state_2433 = G__2443;
 continue;
 } else {
-return ret_value__1243__auto__;
+return ret_value__2245__auto__;
 }
 break;
 }
 });
-cljs_jar_downloader$core$download_$_state_machine__1242__auto__ = function(state_6588){
+cljs_jar_downloader$core$download_$_state_machine__2244__auto__ = function(state_2433){
 switch(arguments.length){
 case 0:
-return cljs_jar_downloader$core$download_$_state_machine__1242__auto____0.call(this);
+return cljs_jar_downloader$core$download_$_state_machine__2244__auto____0.call(this);
 case 1:
-return cljs_jar_downloader$core$download_$_state_machine__1242__auto____1.call(this,state_6588);
+return cljs_jar_downloader$core$download_$_state_machine__2244__auto____1.call(this,state_2433);
 }
 throw(new Error('Invalid arity: ' + arguments.length));
 };
-cljs_jar_downloader$core$download_$_state_machine__1242__auto__.cljs$core$IFn$_invoke$arity$0 = cljs_jar_downloader$core$download_$_state_machine__1242__auto____0;
-cljs_jar_downloader$core$download_$_state_machine__1242__auto__.cljs$core$IFn$_invoke$arity$1 = cljs_jar_downloader$core$download_$_state_machine__1242__auto____1;
-return cljs_jar_downloader$core$download_$_state_machine__1242__auto__;
+cljs_jar_downloader$core$download_$_state_machine__2244__auto__.cljs$core$IFn$_invoke$arity$0 = cljs_jar_downloader$core$download_$_state_machine__2244__auto____0;
+cljs_jar_downloader$core$download_$_state_machine__2244__auto__.cljs$core$IFn$_invoke$arity$1 = cljs_jar_downloader$core$download_$_state_machine__2244__auto____1;
+return cljs_jar_downloader$core$download_$_state_machine__2244__auto__;
 })()
-;})(switch__1241__auto__,c__1306__auto__))
+;})(switch__2243__auto__,c__2264__auto__))
 })();
-var state__1308__auto__ = (function (){var statearr_6596 = f__1307__auto__.call(null);
-(statearr_6596[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__1306__auto__);
+var state__2266__auto__ = (function (){var statearr_2441 = f__2265__auto__.call(null);
+(statearr_2441[cljs.core.async.impl.ioc_helpers.USER_START_IDX] = c__2264__auto__);
 
-return statearr_6596;
+return statearr_2441;
 })();
-return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null,state__1308__auto__);
-});})(c__1306__auto__))
+return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null,state__2266__auto__);
+});})(c__2264__auto__))
 );
 
-return c__1306__auto__;
+return c__2264__auto__;
 });
 cljs_jar_downloader.core.noop = (function cljs_jar_downloader$core$noop(){
 return null;
